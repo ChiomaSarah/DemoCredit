@@ -67,4 +67,14 @@ npx knex migrate:latest
 ```bash
 npx knex seed:run
 
+```
+
+### Endpoints
+
+- createUser: http://localhost:7000/api/register
+- userLogin: http://localhost:7000/api/login
+- fundWallet: http://localhost:7000/api/fund-wallet
+- transferFund: http://localhost:7000/api/transfer
+- withdrawFund: http://localhost:7000/api/withdraw
+- transactionHistory: http://localhost:7000/api/transactions
 
