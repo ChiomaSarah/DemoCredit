@@ -8,9 +8,9 @@ An MVP (Minimum viable product) wallet service where a user can create, fund, wi
 2. [Features](#features)
 3. [Requirements](#requirements)
 4. [Getting Started](#getting-started)
-    - [Installation](#installation)
-    - [Configuration](#configuration)
-    - [Running the Project](#running-the-project)
+   - [Installation](#installation)
+   - [Configuration](#configuration)
+   - [Running the Project](#running-the-project)
 5. [Usage](#usage)
 6. [API Documentation](#api-documentation)
 7. [Contributing](#contributing)
@@ -28,7 +28,6 @@ It is built on Node and Express while persisting data with MySQL through Knex OR
 - Fund transfer
 - Fund withdrawal
 
-
 ## Requirements
 
 List any prerequisites or dependencies needed to run your project.
@@ -40,7 +39,8 @@ List any prerequisites or dependencies needed to run your project.
 - Knex ORM
 - JWT
 
-## Getting Started       
+## Getting Started
+
 Follow these steps to get started.
 
 ### Installation
@@ -54,6 +54,18 @@ git clone https://github.com/ChiomaSarah/DemoCredit
 # Install dependencies
 npm install
 ```
+
+### Start Application
+
+```bash
+# restart dev server with nodemon
+npm start
+
+# build typescript
+npm run build
+
+```
+
 ## Database Migration
 
 ### Run Migrations
@@ -63,7 +75,9 @@ npm install
 npx knex migrate:latest
 
 ```
-# Run seed files
+
+### Run seed files
+
 ```bash
 npx knex seed:run
 
@@ -77,4 +91,3 @@ npx knex seed:run
 - transferFund: http://localhost:7000/api/transfer
 - withdrawFund: http://localhost:7000/api/withdraw
 - transactionHistory: http://localhost:7000/api/transactions
-
